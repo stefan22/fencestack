@@ -1,6 +1,6 @@
 # GC Platform
 
-> testing project: google compute engine/ google app engine vm before getting rid of personal
+> testing cost project: running google compute engine/ google app engine vm before getting rid of personal
   shared hosting site.
 
 - installed 1 gcompute engine & gapp engine
