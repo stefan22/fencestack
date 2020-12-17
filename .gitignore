@@ -1,1 +1,7 @@
 node_modules/
+.git
+*.yaml
+.env
+cloud_sql_proxy
+*.txt
+fencestack-sql-key.json

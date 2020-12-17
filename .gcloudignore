@@ -15,3 +15,7 @@
 
 # Node.js dependencies:
 node_modules/
+
+database.txt
+fencestack-sql-key.json
+
