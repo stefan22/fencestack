@@ -1,22 +1,25 @@
-# GC Platform
+# GC Platform GAE
+VM Node 10
 
-> comparing cost project: running google compute engine/ google app engine vm before getting rid of personal
-  shared hosting site.
+### Basic configuration
 
-- installed 1 gcompute engine & gapp engine
-- disks, vms
-- domains: linked up dns codtechref & fencestack
+Node/Express
+Google App Engine is configured with domain/dns/ssl.    
+GAE has SQL DB account and Storage Bucket with IAMs.    
 
-### google compute engine
-- php/apache ubuntu
+Including proxy SQL for local dev and env variables + other config (config database.txt file)
 
-### google app engine
-- node/express
-- created cloud sql acct/ setup local sql proxy - working ok
-- iam /roles
-- storage bucket / public level access - working ok / w/iam
-- config domain/dns/cname for www 
-- setup google managed ssl https 
+
+> comparing cost project: running google compute engine/ google app engine vm before getting rid of personal shared hosting site.
+
+- there's tons of info not here like vm size, DB and bucket storage GB, types, regions etc etc
+- compare to a reg shared hosting account where you might spend 50 or 60 pounds/year
+- not a betting man but i'll say maybe no more than 5 pounds to serve a bunch static assets for a whole year
+- plus almost complete access, scale resources at random, ability to build all types of reports/generate data ...
+- and that's hardly the basics
+
+
+
 
 
 
