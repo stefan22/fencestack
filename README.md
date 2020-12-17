@@ -12,6 +12,15 @@
 
 ### google app engine
 - node/express
+- created cloud sql acct/ setup local sql proxy - working ok
+- iam /roles
+- storage bucket / public level access - working ok / w/iam
+- config domain/dns/cname for www 
+- setup google managed ssl https 
+
+
+
+
 
 
 

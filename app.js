@@ -47,8 +47,8 @@ const createPool = async (config) => {
 
 app.get('/',  async (req, res) => {
   const config = {};
-  //const pool = await createUnixSocketPool(config);
-  const pool = await createPool(config);
+  const pool = await createUnixSocketPool(config);
+  //const pool = await createPool(config);
 
   pool.query('SELECT 1 + 1 AS solution', function(error, results, fields) {
     if (error) {
