@@ -74,12 +74,13 @@ app.get('/',  async (req, res) => {
             <p>Database connection Successful</p>
             <p>it has now google managed ssl</p>
             <p>learnt this the hard way: google treats wwww as a subdomain in app engines</p>
-
+            <img src="https://storage.cloud.google.com/fencestack-storage-bucket/yogurt.png" alt="yogurt" />
             <hr />
 
             <h3><a href="http://codtechref.com" target="codetechref">CodtechRef.com</a></h3>
             <p>GCE</p>
             <p>need to add ssl here</p>
+            <img src="https://storage.cloud.google.com/fencestack-storage-bucket/campbell.png" alt="campbell" />
           </div>
         </div>
       `)
