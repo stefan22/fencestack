@@ -10,7 +10,7 @@
 
 ### google app engine :+1:
   (£0.00 with forescast running at £0.00 by month's end... perfect for death weight/static files) .      
-  Serverless load-balanced but not zero-config either. 
+  Serverless load-balanced but not zero-config either.                  
   You have to config/ install sdks, create vms,          
   install gcloud, gutils cli's, set iam/access rules+ roles, 
   config cloud storage/buckets dbs, link-up services,           
