@@ -47,17 +47,17 @@ const createPool = async (config) => {
 
 app.get('/',  async (req, res) => {
   const config = {};
-  const pool = await createUnixSocketPool(config);
-  //const pool = await createPool(config);
+  //const pool = await createUnixSocketPool(config);
+  const pool = await createPool(config);
+  //console.log('what is ',pool);
 
   pool.query('SELECT 1 + 1 AS solution', function(error, results, fields) {
     if (error) {
       console.log(error);
-      res.status(500).send('Error connecting to database')
-      .end();
+      res.status(500).send('Error connecting to database ');
     }
     else {
-      res.status(200).send(`
+      res.type('html').status(200).send(`
         <div 
           style="display: flex; 
           flex-direction: column; 
@@ -73,13 +73,11 @@ app.get('/',  async (req, res) => {
             <p>GAE</p>
             <p>Database connection Successful</p>
             <p>it has now google managed ssl</p>
-            <p>learnt this the hard way: google treats wwww as a subdomain in app engines</p>
+            <p>learnt this the hard way: google treats www as a subdomain within app-engine</p>
             <img src="https://storage.cloud.google.com/fencestack-storage-bucket/yogurt.png" alt="yogurt" />
             <hr />
 
-            <h3><a href="http://codtechref.com" target="codetechref">CodtechRef.com</a></h3>
-            <p>GCE</p>
-            <p>need to add ssl here</p>
+            
             <img src="https://storage.cloud.google.com/fencestack-storage-bucket/campbell.png" alt="campbell" />
           </div>
         </div>
